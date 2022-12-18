@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>portfolio</title>
+    <script>
+        function timing(){
+            d=new Date();
+            setTimeout("timing()",1000);
+            h=d.getHours();
+            m=d.getMinutes();
+            s=d.getSeconds();
+             
+            sep=":"
+            if(s%2==0)
+                sep=":";
+                else sep=" ";
+            if(h<10)
+                h= "0"+h;
+            if(m<10)
+                m= "0"+m;
+            if(s<10)
+                s="0"+s
+            document.fo.horloge.value= h + sep + m + sep +s
+            }
+    </script>
+</head>
+<body onload="timing()">
+    <!-- ************** header ***********-->
+   <header>
+  <div>
+    <form action="" name="fo">
+        <!-- pour eviter les problèmes avec le changement de chiffres et d'espaces, on met la police en mono-space 
+        ainsi rien ne change, chacun a déjà ses positions fixes -->
+        <input type="text" name="horloge" size="8" style="font-family:mono-space;color:orange;align-items:center;justify-content:center;border:none;font-size:2rem;cursor:none;">
+    </form>
+  </div>
+
+    <div class="box_menu" id="menu-icon"> 
+        <span> </span>
+        <span> </span>
+        <span> </span>
+    </div>
+
+    <nav class="nav_bar"> 
+    <ul class="navlist">
+      <li> <a href="#home" >Home</a> </li>
+      <li> <a href="#about" >About</a> </li> 
+      <li> <a href="#portfolio" >Portfolio</a> </li> 
+      <li> <a href="#services" >Services</a> </li> 
+      <li> <a href="#contacts" >Contact</a> </li>   
+    </ul>
+</nav>
+   </header> 
+
+   <!-- ****************** home **********-->
+   <section class="home" id="home">
+    <div class="home_texte">
+        <h3>Hello,I am</h3>
+        <h2>Zongo julien</h2>
+        <h5>A web programmer <span>From Burkina faso precisely at Koudougou</span>  <span class="emoji">😏</span>  </h5>
+        <p> I'am a student in computer science, second year and I am trying to learn many things about web programming and <br> artificial intelligence in order to provide security for my country</p>
+    <div class="social">
+        <a href="https://www.facebook.com/julien.zongo.900"> <img src="images\facebook.ico" alt=""> </a>
+        <a href="https://wa.me/qr/JR5DPBEUIUBHJ1"> <img src="images\whatsapp.ico" alt=""> </a>    
+        <a href="#"> <img src="images\inkedin.ico" alt=""> </a>
+    </div>
+     <a href="#about" class="btn"> About me</a>
+    </div>
+
+    <div class="home_img">
+        <img src="images\img2.png" alt="">
+
+        <a href="cv.html" class="down_cv"> <i class="fa fa-download" aria-hidden="true"></i> Consult my CV</a>
+
+    </div>
+   </section>
+
+   <!-- ************* services: what i am working about *********-->
+   <section class="sub_service">
+    <div class="items">
+        <div class="box">
+            <div class="box_img">
+                <img src="images\target.ico" alt="">
+            </div>
+            <h3>Get my target</h3>
+            <p>Most important advices for yourself development with some coachs specialised in internationnal relationships</p>
+        </div>
+
+        <div class="box">
+            <div class="box_img">
+                <img src="images\paint.ico" alt="">
+            </div>
+            <h3>Make awesome design</h3>
+            <p>Most important advices for yourself development with some documents and Adobe packages</p>
+        </div>
+
+        <div class="box">
+            <div class="box_img">
+                <img src="images\idea.ico" alt="">
+            </div>
+            <h3>Find new ideas</h3>
+            <p>Most important advices for yourself development with some new ideas, a new mind,a new way of thinking</p>
+        </div>
+    </div>
+   </section>
+
+   <!-- ************ About me ************** -->
+   <section class="about" id="about">
+    <div class="about_img">
+        <img src="images\img3.png" alt="">
+    </div>
+    <div class="about_text">
+        <h3>I'am  developer</h3>
+        <h2>I am learning at Burkina Institute of technology and myself!</h2>
+        <p>I would like to work in my national army as computer scientist in military genius, in order to help my country A particular set of programming skills are mostly required, the near future is vague when you work without real goals.
+            The changing fortunes of time force people to acquire new expertise which will be competitive in the employment market.I would like to learn the best things </p>
+        <a href="#contacts" class="btn">Hire me</a>
+    </div>
+   </section>
+
+ <!-- ************** PortFolio ******************-->
+   <section class="portfolio" id="portfolio">
+     <div class="headfolio">
+        <h3>Portfolio</h3>
+        <h2>My training step by step</h2>
+        <p>I would like to be a fullstack developer.For that i have to learn many and specific languages that's have a link with my dreams.
+             A future driverless vehicle won’t be
+             achievable without the efforts of computer vision engineers and their programming
+              skills. They deal with building smart systems that are capable of interpreting visual data.
+               The scientific discipline includes a number of applications that computer engineers encounter on a daily basis
+
+        </p>
+     </div>
+     <div class="portfolio_content">
+        <div class="col">
+            <img src="images\hulk.jpg" alt="">
+            <div class="layer">
+                <h3>Web design</h3>
+                <h5 style="color: white;">Programming</h5>
+            </div>
+        </div>
+
+        <div class="col">
+            <img src="images\spider.jpg" alt="">
+            <div class="layer">
+                <h3>C</h3>
+                <h5 style="color: white;">Programming</h5>
+            </div>
+        </div>
+
+        <div class="col">
+            <img src="images\sam.jpg" alt="">
+            <div class="layer">
+                <h3>Python</h3>
+                <h5 style="color: white;">Operating System Programming</h5>
+            </div>
+        </div>
+
+        <div class="col">
+            <img src="images\kanda.jpg" alt="">
+            <div class="layer">
+                <h3>JavaScript</h3>
+                <h5 style="color: white;"> Object Oriented Programming</h5>
+            </div>
+        </div>
+
+        <div class="col">
+            <img src="images\wanda.jpg" alt="">
+            <div class="layer">
+                <h3>Canvas</h3>
+                <h5 style="color: white;">Design</h5>
+            </div>
+        </div>
+
+        <div class="col">
+            <img src="images\thanos.jpg" alt="">
+            <div class="layer">
+                <h3>Adobe XD</h3>
+                <h5 style="color: white;">Design</h5>
+            </div>
+        </div>
+     </div>
+   </section>
+
+   <section class="services" id="services">
+    <div class="headfolio">
+        <h3>Training</h3>
+        <h2>What I would like to be able to do!</h2>
+        <p>Provide security for my country.I deal with building smart systems that are capable of interpreting visual data.
+            The benefits of machine learning are leveraged in banking apps, autonomous vehicles,
+             fintech solutions, recommendation systems, and other tools. The technology 
+            keeps finding its usage in every industry where a human interacts with a machine.
+        </p>
+     </div>
+
+     <div class="services_content">
+        <div class="row">
+            <div class="s s-one">
+               <img src="images\c.png" alt=""> 
+            </div>
+            <h3>By using C  </h3>
+            <h5>Contract and <span>training </span> opportunity  </h5>
+        <p>We want to be able to create some programs for litle machine operating sytems,
+            embeded systems,with your vehicles and so on.
+        </p>
+        </div>
+
+
+        <div class="row">
+            <div class="s s-two">
+               <img src="images\python.ico" alt=""> 
+            </div>
+            <h3>Data analysis </h3>
+            <h5>Contract and <span>training </span> opportunity  </h5>
+        <p>Every enterprise can call us to get our service and well will improve their Experience
+            and productivity.We will win together.
+        </p>
+        </div>
+
+        <div class="row">
+            <div class="s s-three">
+               <img src="images\web.png" alt=""> 
+            </div>
+            <h3>Web development </h3>
+            <h5>Contract and <span>training </span> opportunity  </h5>
+        <p>
+            With us you will get the opportunity to be seen around the world.Your products and all your
+            company will be provided by the website that we will construct just for you.
+        </p>
+        </div>
+
+       
+     </div>
+   </section>
+
+   <!-- ************** work **************-->
+   <section class="missions" >
+    <div class="headfolio">
+        <h3>Missions</h3>
+        <h2> Completed 10+ Pojects <br> Successfully</h2>
+     </div>
+<div class="missions_box">
+    <div class="wrap one">
+        <h3>10+</h3>
+        <p>Accomplish projects</p>
+    </div>
+
+    <div class="wrap two">
+        <h3>100% +</h3>
+        <p>Growing</p>
+    </div>
+
+    <div class="wrap three">
+        <h3>5+</h3>
+        <p>Running projects</p>
+    </div>
+</div>
+   </section>
+<!-- *************************** Contacts*******************-->
+<section class="contacts" id="contacts">
+    <div class="container">
+        <div class="center">
+            <h3>Let me answer all your questions </h3>
+            <p>Any suggestion ? Please send me an email</p>
+        </div>
+        
+        <div class="action">
+            <form action="">
+                <input type="email" name="email" placeholder="Enter your email here..." required>
+                <input type="submit" name="submit" value="Validate">
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- ************************* final step *************-->
+
+<div class="final_state">
+    <p>Made in learning by T.JULIAN <i class="fa fa-copyright" aria-hidden="true"></i> 2022</p>
+</div>
+   <script src="portfolio.js"></script>
+</body>
+</html>
